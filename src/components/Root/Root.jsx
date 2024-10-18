@@ -4,7 +4,7 @@ import Header from "../Header/Header";
 
 const Root = () => {
     return (
-        <div>
+        <div className="bg-gradient-to-r from-cyan-500 to-blue-500">
             <Header></Header>
             <Outlet></Outlet>
             <Footer></Footer>

@@ -10,6 +10,8 @@ import Home from './components/Home/Home';
 import Login from './components/Login/Login';
 import Signup from './components/Signup/Signup';
 import Products from './components/Products/Products';
+import ProductDetail from './components/ProductDetail/ProductDetail';
+import UploadProduct from './components/UploadProduct/UploadProduct';
 
 const router = createBrowserRouter([
   {
@@ -31,6 +33,14 @@ const router = createBrowserRouter([
       {
         path: '/products',
         element: <Products />
+      },
+      {
+        path: '/product/:id',
+        element: <ProductDetail></ProductDetail>
+      },
+      {
+        path: '/upload',
+        element: <UploadProduct></UploadProduct>
       },
     ]
   },

@@ -10,7 +10,7 @@ const Signup = () => {
     const [success, setSuccess] = useState('');
     const [showPassword, setShowPassword] = useState(false);
 
-    const handleSignup = e =>{
+    const handleSignup = e => {
         e.preventDefault();
         const name = e.target.name.value;
         const email = e.target.email.value;
@@ -39,29 +39,29 @@ const Signup = () => {
 
         //create user
         createUserWithEmailAndPassword(auth, email, password)
-        .then(result => {
-            console.log(result.user);
-            setSuccess('User Created Successfully.')
+            .then(result => {
+                console.log(result.user);
+                setSuccess('User Created Successfully.')
 
-            //update profile
-            updateProfile(result.user, {
-                displayName: name,
-                photoURL: "https://example.com/jane-q-user/profile.jpg",
-            })
-            .then(()=> console.log('Profile updated'))
-            .catch()
+                //update profile
+                updateProfile(result.user, {
+                    displayName: name,
+                    photoURL: "https://example.com/jane-q-user/profile.jpg",
+                })
+                    .then(() => console.log('Profile updated'))
+                    .catch()
 
-            //send email varification
-            sendEmailVerification(result.user)
-            .then(() =>{
-                alert('please check your email and verify your account')
+                //send email varification
+                sendEmailVerification(result.user)
+                    .then(() => {
+                        alert('please check your email and verify your account')
+                    })
+                    .catch()
             })
-            .catch()
-        })
-        .catch(error => {
-            console.error(error);
-            setRegisterError(error.message)
-        })
+            .catch(error => {
+                console.error(error);
+                setRegisterError(error.message)
+            })
 
     }
 
@@ -87,6 +87,14 @@ const Signup = () => {
                                 showPassword ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>
                             }
                         </span>
+                    </div>
+                    <br />
+                    <div>
+                        <select className="select select-success w-full">
+                            <option disabled selected>Select One</option>
+                            <option>Farmer</option>
+                            <option>Buyer</option>
+                        </select>
                     </div>
                     <br />
                     <div className="mb-2">

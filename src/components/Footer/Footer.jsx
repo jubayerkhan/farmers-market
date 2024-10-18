@@ -1,7 +1,7 @@
 
 const Footer = () => {
     return (
-        <footer className="footer footer-center bg-base-200 text-base-content rounded p-10">
+        <footer className="footer footer-center text-white rounded p-10 bg-gradient-to-r from-blue-500 to-green-500">
             <nav className="grid grid-flow-col gap-4">
                 <a className="link link-hover">About us</a>
                 <a className="link link-hover">Contact</a>
@@ -46,7 +46,7 @@ const Footer = () => {
                 </div>
             </nav>
             <aside>
-                <p>Copyright © {new Date().getFullYear()} - All right reserved by ACME Industries Ltd</p>
+                <p>Copyright © {new Date().getFullYear()} - All right reserved by FARMERS MARKET Ltd</p>
             </aside>
         </footer>
     );
