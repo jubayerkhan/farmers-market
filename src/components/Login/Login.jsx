@@ -63,7 +63,7 @@ const Login = () => {
     return (
         <div className="">
             <div className="mx-auto md:w-1/2">
-                <h2 className="text-3xl mb-4">Please Login.</h2>
+                <h2 className="text-3xl mb-4">Please Login</h2>
                 <form onSubmit={handleLogin}>
                     <input
                         className="mb-4 w-full py-2 px-4"

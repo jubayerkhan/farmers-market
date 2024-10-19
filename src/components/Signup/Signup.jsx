@@ -68,7 +68,7 @@ const Signup = () => {
     return (
         <div className="">
             <div className="mx-auto md:w-1/2">
-                <h2 className="text-3xl mb-4">Please Register.</h2>
+                <h2 className="text-3xl mb-4">Please Register</h2>
                 <form onSubmit={handleSignup}>
                     <input className="mb-4 w-full py-2 px-4" type="text" name="name" placeholder="Your Name" id="name" required />
                     <br />

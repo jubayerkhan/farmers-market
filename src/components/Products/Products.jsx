@@ -17,7 +17,7 @@ const Products = () => {
 
     return (
         <div className="text-center">
-            <h2>This is product page {products.length}</h2>
+            {/* <h2>This is product page {products.length}</h2> */}
             <div className="grid gap-3 grid-cols-2 place-items-center">
                 {
                     products.map(product => <Product key={product.id} product={product}></Product>)
