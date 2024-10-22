@@ -40,8 +40,8 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div>
-                <h2 className="text-3xl text-white">FARMERS MARKET: The Platform Connecting You to Bangladeshi Farmers
+            <div className="mb-4">
+                <h2 className="text-3xl text-white text-center">FARMERS MARKET: The Platform Connecting You to Bangladeshi Farmers
                 </h2>
             </div>
         </div>

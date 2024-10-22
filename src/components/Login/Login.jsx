@@ -63,7 +63,7 @@ const Login = () => {
     return (
         <div className="">
             <div className="mx-auto md:w-1/2">
-                <h2 className="text-3xl mb-4">Please Login</h2>
+                <h2 className="text-3xl mb-4 text-white">Please Login.</h2>
                 <form onSubmit={handleLogin}>
                     <input
                         className="mb-4 w-full py-2 px-4"
@@ -87,7 +87,7 @@ const Login = () => {
                             }
                         </span>
                         <label className="label">
-                            <a onClick={handleForgetPassword} href="#" className="label-text-alt link link-hover">Forgot password?</a>
+                            <a onClick={handleForgetPassword} href="#" className="label-text-alt link link-hover text-white">Forgot password?</a>
                         </label>
                     </div>
                     <br />
@@ -102,9 +102,9 @@ const Login = () => {
                     registerError && <p className="text-red-600">{registerError}</p>
                 }
                 {
-                    success && <p className="text-green-500">{success}</p>
+                    success && <p className="text-green-800">{success}</p>
                 }
-                <p>New to this website? Please <Link className="underline" to="/signup">Sign Up</Link></p>
+                <p className="text-white">New to this website? Please <Link className="underline" to="/signup">Sign Up</Link></p>
             </div>
         </div>
     );

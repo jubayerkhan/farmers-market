@@ -89,13 +89,13 @@ const Signup = () => {
                         </span>
                     </div>
                     <br />
-                    <div>
+                    {/* <div>
                         <select className="select select-success w-full">
                             <option disabled selected>Select One</option>
                             <option>Farmer</option>
                             <option>Buyer</option>
                         </select>
-                    </div>
+                    </div> */}
                     <br />
                     <div className="mb-2">
                         <input type="checkbox" name="terms" id="terms" />
@@ -108,7 +108,7 @@ const Signup = () => {
                     registerError && <p className="text-red-600">{registerError}</p>
                 }
                 {
-                    success && <p className="text-green-500">{success}</p>
+                    success && <p className="text-green-800">{success}</p>
                 }
                 <p>Already have an account? Please <Link className="underline" to="/login">Login</Link></p>
             </div>

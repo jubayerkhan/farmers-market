@@ -41,13 +41,14 @@ const TransportAndDelivery = () => {
                     </div>
                 </div>
             </div>
-            <div className="mt-4 text-center">
+            <div className="my-4 text-center">
                 <h2 className="text-3xl text-center mb-4">Payment Mathods</h2>
                 <p>
                 Bkash No: 01971206180 <br />
                 Bank Account: 400234111224557, Dhanmondi Brunch, Dhaka. <br />
                 Credit Card No: 4777980900220099
                 </p>
+                <p>Platform charge 10 taka per kg</p>
             </div>
         </div>
     );
