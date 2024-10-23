@@ -4,19 +4,19 @@ import { useParams } from "react-router-dom";
 const ProductDetail = () => {
     const {id} = useParams();
 
-    const [detail, setDetail] = useState([])
+    const [product, setProduct] = useState([])
 
     
     useEffect(() => {
         fetch(`http://localhost:3000/products/${id}`)
         .then(res => res.json())
         .then(data => {
-            setDetail(data)
+            setProduct(data)
             console.log(data)
             })
     }, [])
 
-    const { _id, name, image, quantity, price } = detail;
+    const { _id, name, image, quantity, price, detail } = product;
 
     return (
         <div className="text-white m-4">
@@ -24,12 +24,13 @@ const ProductDetail = () => {
             <div className="grid md:grid-cols-4 gap-4">
                 <div className="md:col-span-2">
                     <img className="rounded-xl" src={image} alt="" />
-                    <p>Product detail: The tomato, Solanum lycopersicum, is a plant whose fruit is an edible berry that is culinarily used as a vegetable. The tomato is a member of the nightshade family that includes tobacco, potato, and chili peppers. </p>
                 </div>
                 <div className="text-xl">
                     <p>Price:{price}</p>
                     <p>Quantity: {quantity}</p>
                     <p>Contact Number: +8801971206180</p>
+                    <p className="py-4"> Product detail: {detail} </p>
+                    <button className="btn btn-success">Add to Cart</button>
                 </div>
             </div>
         </div>
