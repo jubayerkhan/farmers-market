@@ -73,7 +73,7 @@ const Header = () => {
                 </div>
                 <div className="flex items-center">
                     <img className="h-16 rounded-full" src="/src/assets/images/logo.jpg" alt="" />
-                    <a className="btn btn-ghost text-3xl text-green-400 font-bold">FARMERS MARKET</a>
+                    <a className="btn btn-ghost text-3xl text-green-400 font-bold">FARMER'S MARKET</a>
                 </div>
             </div>
             <div className="navbar-center hidden lg:flex">
